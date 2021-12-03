@@ -1,0 +1,68 @@
+@font-face {
+  font-family: Acumin Pro;
+  src: url(../fonts/AcuminPro/AcuminPro-Regular.woff2) format("woff2"),
+    url(../fonts/AcuminPro/AcuminPro-Regular.woff2) format("woff"),
+    url(../fonts/AcuminPro/AcuminPro-Regular.woff2) format("ttf"),
+    url(../fonts/AcuminPro/AcuminPro-Regular.woff2) format("eot");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: AcuminPro Bold;
+  src: url(../fonts/AcuminPro/AcuminPro-Bold.woff2) format("woff2"),
+    url(../fonts/AcuminPro/AcuminPro-Bold.woff) format("woff"),
+    url(../fonts/AcuminPro/AcuminPro-Bold.ttf) format("ttf"),
+    url(../fonts/AcuminPro/AcuminPro-Bold.eot) format("eot");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url(../fonts/Helvetica/Helvetica.woff2) format("woff2"),
+    url(../fonts/Helvetica/Helvetica.woff) format("woff"),
+    url(../fonts/Helvetica/Helvetica.ttf) format("ttf"),
+    url(../fonts/Helvetica/Helvetica.eot) format("eot");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Helvetica Bold;
+  src: url(../fonts/Helvetica/Helvetica-Bold.woff2) format("woff2"),
+    url(../fonts/Helvetica/Helvetica-Bold.woff) format("woff"),
+    url(../fonts/Helvetica/Helvetica-Bold.ttf) format("ttf"),
+    url(../fonts/Helvetica/Helvetica-Bold.eot) format("eot");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Helvetica Oblique;
+  src: url(../fonts/Helvetica/Helvetica-Oblique.woff2) format("woff2"),
+    url(../fonts/Helvetica/Helvetica-Oblique.woff) format("woff"),
+    url(../fonts/Helvetica/Helvetica-Oblique.ttf) format("ttf"),
+    url(../fonts/Helvetica/Helvetica-Oblique.eot) format("eot");
+  font-style: normal;
+}
+
+body {
+  background-color: #f6f8f9;
+}
+
+.active {
+  opacity: 100% !important;
+}
+
+.upload-time {
+  //upload timer for reuse
+  display: flex;
+  color: #a6adb4;
+  h5 {
+    font-style: italic;
+    font-weight: 100;
+    margin-left: 10px;
+    font-size: 0.8125rem;
+    font-family: Helvetica Oblique, sans-serif;
+    a {
+      font-family: Helvetica Oblique, sans-serif;
+    }
+  }
+}

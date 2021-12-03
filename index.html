@@ -4,7 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <!--tags for mobile theme-->
+    <meta name="theme-color" content="#F6F8F9">
+    <meta name="msapplication-navbutton-color" content="#F6F8F9">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#F6F8F9">
+
+    <!--seo meta tags-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="description" content="This website describes traveling tours. You can discover new places and reserv tours where you want to go.">
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="#" /> 
+    
+
+    <title>Your Traveling Place</title>
+    <link
+      rel="icon"
+      href="./assets/icons/title-icon.png"
+      type="image/icon type"
+    />
     <link rel="stylesheet" href="./styles/resetCSS.css" />
     <link
       rel="stylesheet"
@@ -15,52 +35,113 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+
     <header>
-      <div class="header-logo">
-        <a href="#"><img src="./assets/images/LOGO.png" /></a>
+      
+    <div class="burger-menu" id="burger-menu">
+      <div class="mobile-overlay">
+        <div class="overlay-header-logo">
+          <img src="./assets/images/mobile overlay images/LOGO.png" alt="orange logo">
+        </div>
+        <div class="side-menu">
+          <ul>
+            <a href="./discover.html"><img src="./assets/icons/mobile overlay icons/home.svg" alt="home icon"><span class="active">HOME</span></a>
+            <a href="./discover.html"> <img src="./assets/icons/mobile overlay icons/discover.svg" alt="compass icon"> <span>DISCOVERY</span></a>
+            <a href="./discover.html"> <img src="./assets/icons/mobile overlay icons/photos.svg" alt="photos icon"> <span>PHOTOS</span> </a>
+            <a href="./discover.html"> <img src="./assets/icons/mobile overlay icons/mail.svg" alt="email icon"> <span>CONTACT</span> </a>
+            <a> <img src="./assets/images/mobile overlay images/christopher-campbell-28567-unsplash.png" alt="profile picture"> <span>PROFILE</span> </a>
+          </ul>
+        </div>
+        <div class="mobile-overlay-footer">
+          <div class="mobile-overlay-footer-nav-bar">
+          <ul>
+            <a>ABOUT</a>
+            <a>HELP</a>
+            <a>TERMS</a>
+            <a>GUIDLINES</a>
+          </ul>
+          <ul>
+            <a>TESTIMONIALS</a>
+            <a>ADVERTISE</a>
+            <a>INTEGRATIONS</a>
+            <a>CAREERS</a>
+          </ul>
+        </div>
+        <div class="mobile-overlay-footer-icon-bar">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fas fa-globe-americas"></i>
+        </div>
+        </div>
       </div>
+    </div>
+    <div class="burger-menu-backdrop" id="burger-menu-backdrop"></div>
+
+      <div class="burger-menu-button" id="burger-menu-button">
+        <div class="first-line"></div>
+        <div class="second-line"></div>
+        <div class="third-line"></div>
+      </div>
+      <div class="header-logo">
+        <a href="#" class="mobile-header-logo"> <img class="mobile-header-logo" src="./assets/images/mobile-header-LOGO.png" alt="gray logo"></a>
+        <a href="#" class="desktop-header-logo"><img src="./assets/images/LOGO.png" alt="orange logo" /></a>
+        
+      </div>
+      <div class="mobile-profile-picture">
+      <img class="profile-photo-circle" src="./assets/images/Ellipse 10.svg" alt="white small circle">
+      <img src="./assets/images/693a04e6b83f570445ef918b0170fa77--instagram-com-beauty-photos.png" alt="small profile picture">
+    </div>
       <div class="header-nav-bar">
         <ul class="header-list">
-          <li>
-            <a href="#">HOME</a>
-          </li>
-          <li>
-            <a href="#">DISCOVERY</a>
-          </li>
-          <li>
-            <a href="#">PHOTOS</a>
-          </li>
-          <li>
-            <a href="#">CONTACT</a>
-          </li>
+          <a href="./discover.html" class="active">HOME</a>
+          <a href="./discover.html">DISCOVERY</a>
+          <a href="./discover.html">PHOTOS</a>
+          <a href="./discover.html">CONTACT</a>
         </ul>
         <div class="header-user-profile">
           <img
             class="header-user-image"
             src="./assets/images/christopher-campbell-28567-unsplash.png"
+            alt="user image"
           />
         </div>
       </div>
+     
     </header>
+    
     <section>
       <div class="news-section">
         <div class="world-news">
-          <img class="world-news-image" src="./assets/images/left-bg.jpg" />
+          <div class="world-news-content">
+            <h1 class="world-news-title">WORLD NEWS</h1>
+            <hr />
+            <h1 class="amazing-places">Amazing places in America to visit.</h1>
+            <h3>
+              For some reason &#151 this country, this city, this neighborhood, this
+              particular street &#151 is the place you are living a majority of
+              your life in.
+            </h3>
+            <button>LEARN MORE</button>
+          </div>
+          <img class="world-news-image" src="./assets/images/left-bg.jpg" alt="nature background of America" />
         </div>
         <div class="more-news">
           <div class="more-news-head">
             <div class="more-news-title">
-              <h2>MORE NEWS</h2>
+              <h1>MORE NEWS</h1>
             </div>
             <div class="arrows">
               <img
                 class="left-arrow-button"
                 src="./assets/icons/chevron-left-solid.svg"
+                alt="left arrow"
               />
 
               <img
                 class="right-arrow-button"
                 src="./assets/icons/chevron-right-solid.svg"
+                alt="right arrow"
               />
             </div>
           </div>
@@ -70,7 +151,6 @@
               <h4 class="more-news-title">Article title</h4>
               <p class="more-news-description">
                 Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id,
-                <br />
                 ad has appareat
               </p>
               <div class="upload-time">
@@ -84,7 +164,6 @@
               <h4 class="more-news-title">Article title</h4>
               <p class="more-news-description">
                 Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id,
-                <br />
                 ad has appareat
               </p>
               <div class="upload-time">
@@ -96,29 +175,32 @@
         </div>
       </div>
     </section>
+    
     <section>
       <div class="trending-section">
         <div class="trending-head">
-          <h2>TRENDING</h2>
+          <h1>TRENDING</h1>
           <div class="arrows">
             <img
               class="left-arrow-button"
               src="./assets/icons/chevron-left-solid.svg"
+              alt="left arrow"
             />
 
             <img
               class="right-arrow-button"
               src="./assets/icons/chevron-right-solid.svg"
+              alt="right arrow"
             />
           </div>
         </div>
         <div class="cards">
           <div class="card">
-            <img src="./assets/images/Image.png" />
+            <img src="./assets/images/Image.png" alt="nature" />
             <div class="card-description">
               <h3>Dolore magna aliqua</h3>
               <p>
-                Lorem ipsum dolor sit amet, ipsum labitur <br />
+                Lorem ipsum dolor sit amet, ipsum labitur 
                 lucilius mel id, ad has appareat
               </p>
               <div class="upload-time">
@@ -128,11 +210,11 @@
             </div>
           </div>
           <div class="card">
-            <img src="./assets/images/annie-spratt-216507-unsplash.png" />
+            <img src="./assets/images/annie-spratt-216507-unsplash.png" alt="beach and umbrella" />
             <div class="card-description">
               <h3>Dolore magna aliqua</h3>
               <p>
-                Lorem ipsum dolor sit amet, ipsum labitur <br />
+                Lorem ipsum dolor sit amet, ipsum labitur 
                 lucilius mel id, ad has appareat
               </p>
               <div class="upload-time">
@@ -142,11 +224,11 @@
             </div>
           </div>
           <div class="card">
-            <img src="./assets/images/carlos-hevia-628890-unsplash.png" />
+            <img src="./assets/images/carlos-hevia-628890-unsplash.png" alt="mountain climbers" />
             <div class="card-description">
               <h3>Dolore magna aliqua</h3>
               <p>
-                Lorem ipsum dolor sit amet, ipsum labitur <br />
+                Lorem ipsum dolor sit amet, ipsum labitur 
                 lucilius mel id, ad has appareat
               </p>
               <div class="upload-time">
@@ -158,19 +240,22 @@
         </div>
       </div>
     </section>
+
     <section>
       <div class="happening-now-section">
         <div class="happening-now-head">
-          <h2>HAPPENING NOW</h2>
+          <h1>HAPPENING NOW</h1>
           <div class="arrows">
             <img
               class="left-arrow-button"
               src="./assets/icons/chevron-left-solid.svg"
+              alt="left arrow"
             />
 
             <img
               class="right-arrow-button"
               src="./assets/icons/chevron-right-solid.svg"
+              alt="right arrow"
             />
           </div>
         </div>
@@ -178,12 +263,13 @@
         <div class="happening-now-all-cards-section">
           <div class="happening-now-large-section">
             <div class="city-section">
-              <h3 class="city">CITY</h3>
               <div class="cards-whole-description">
+                <h3 class="city">CITY</h3>
+                <div>
                 <h3>Large article title</h3>
                 <p>
                   Lorem ipsum sit amet, in eam odio amet, vix id nullam
-                  detracto, vidit vituperatoribus duo<br />id. Affert detraxit
+                  detracto, vidit vituperatoribus duo id. Affert detraxit
                   voluptatum vis eu, inermis eloquentiam.
                 </p>
                 <div class="upload-time">
@@ -191,15 +277,16 @@
                   <h5>2m ago</h5>
                 </div>
               </div>
-              <img src="./assets/images/Image1.png" />
+              </div> 
             </div>
             <div class="travel-section">
-              <h3 class="travel">TRAVEL</h3>
               <div class="cards-whole-description">
+                <h3 class="travel">TRAVEL</h3>
+                <div>
                 <h3>Large article title</h3>
                 <p>
                   Lorem ipsum sit amet, in eam odio amet, vix id nullam
-                  detracto, vidit vituperatoribus duo<br />id. Affert detraxit
+                  detracto, vidit vituperatoribus duo id. Affert detraxit
                   voluptatum vis eu, inermis eloquentiam.
                 </p>
                 <div class="upload-time">
@@ -207,13 +294,13 @@
                   <h5>2m ago</h5>
                 </div>
               </div>
-              <img src="./assets/images/Image2.png" />
+              </div>
             </div>
           </div>
 
           <div class="happening-now-small-cards">
             <div class="happening-now-small-card">
-              <img src="./assets/images/161975_1024x768.png" />
+              <img src="./assets/images/161975_1024x768.png" alt="elephant, sand" />
               <div class="card-description">
                 <h3>Small title</h3>
 
@@ -226,6 +313,7 @@
             <div class="happening-now-small-card">
               <img
                 src="./assets/images/roberto-nickson-g-744100-unsplash.png"
+                alt="nature, red parrot, parrot"
               />
               <div class="card-description">
                 <h3>Small title</h3>
@@ -237,7 +325,7 @@
               </div>
             </div>
             <div class="happening-now-small-card">
-              <img src="./assets/images/tom-mussak-108425-unsplash.png" />
+              <img src="./assets/images/tom-mussak-108425-unsplash.png" alt="nature, road, hightway" />
               <div class="card-description">
                 <h3>Small title</h3>
 
@@ -251,32 +339,37 @@
         </div>
       </div>
     </section>
+
     <footer>
       <div class="footer">
-        <div class="footer-nav-bar">
-          <img class="footer-logo" src="./assets/images/LOGO.png" />
-          <ul>
-            <li><a>Home</a></li>
-            <li><a>Discovery</a></li>
-            <li><a>Photos</a></li>
-            <li><a>Contact</a></li>
-          </ul>
-          <ul>
-            <li><a>About</a></li>
-            <li><a>Help</a></li>
-            <li><a>Terms</a></li>
-            <li><a>Guidlines</a></li>
-          </ul>
-          <ul>
-            <li><a>Testimonials</a></li>
-            <li><a>Advertise</a></li>
-            <li><a>Integrations</a></li>
-            <li><a>Careers</a></li>
-          </ul>
+        <div class="footer-logo-nav-bar-cont">
+          <img class="footer-logo" src="./assets/images/footer-LOGO.png" alt="orange logo" />
+          <div class="footer-nav-bar">
+            <ul>
+              <a>Home</a>
+              <a>Discovery</a>
+              <a>Photos</a>
+              <a>Contact</a>
+            </ul>
+            <ul>
+              <a>About</a>
+              <a>Help</a>
+              <a>Terms</a>
+              <a>Guidlines</a>
+            </ul>
+            <ul>
+              <a>Testimonials</a>
+              <a>Advertise</a>
+              <a>Integrations</a>
+              <a>Careers</a>
+            </ul>
+          </div>
         </div>
         <div class="email-subscribe">
+          
           <input placeholder="Email" />
           <i class="fas fa-location-arrow"></i>
+        
           <p>Stay in touch with us for the freshest products!</p>
         </div>
         <div class="icons">
@@ -287,6 +380,7 @@
         </div>
       </div>
     </footer>
+
     <script src="./scripts/scripts.js"></script>
   </body>
 </html>
