@@ -329,6 +329,9 @@ header {
 
       .more-news-travel {
         margin-bottom: 40px;
+        @media only screen and (max-width: 1124px) {
+          margin-right: 40px;
+        }
 
         @media only screen and (max-width: 1024px) {
           margin-right: 40px;

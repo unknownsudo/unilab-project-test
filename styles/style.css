@@ -449,6 +449,11 @@ header .mobile-profile-picture .profile-photo-circle {
 .news-section .more-news .travel-technology-cont .more-news-travel {
   margin-bottom: 40px;
 }
+@media only screen and (max-width: 1124px) {
+  .news-section .more-news .travel-technology-cont .more-news-travel {
+    margin-right: 40px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .news-section .more-news .travel-technology-cont .more-news-travel {
     margin-right: 40px;
