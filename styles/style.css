@@ -27,6 +27,12 @@ body {
   background-color: #f6f8f9;
 }
 
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .active {
   opacity: 100% !important;
 }
@@ -1066,7 +1072,6 @@ header .mobile-profile-picture .profile-photo-circle {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 40px;
-  line-height: 20px;
   font-size: 0.6875rem;
   width: 125px;
   text-decoration: none;
@@ -1077,6 +1082,7 @@ header .mobile-profile-picture .profile-photo-circle {
 }
 .burger-menu .mobile-overlay .side-menu ul a img {
   margin-right: 40px;
+  width: 20px;
 }
 @media only screen and (max-width: 340px) {
   .burger-menu .mobile-overlay .side-menu ul a img {
@@ -1085,6 +1091,7 @@ header .mobile-profile-picture .profile-photo-circle {
 }
 .burger-menu .mobile-overlay .side-menu ul a span {
   opacity: 50%;
+  line-height: 20px;
 }
 @media only screen and (max-width: 340px) {
   .burger-menu .mobile-overlay .side-menu ul a {

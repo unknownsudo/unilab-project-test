@@ -27,6 +27,12 @@ body {
   background-color: #f6f8f9;
 }
 
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .active {
   opacity: 100% !important;
 }

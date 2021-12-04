@@ -47,6 +47,10 @@ body {
   background-color: #f6f8f9;
 }
 
+nav {
+  display: flex;
+}
+
 .active {
   opacity: 100% !important;
 }
