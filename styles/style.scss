@@ -1,4 +1,5 @@
 @import "./common.scss";
+
 a {
   font-family: Helvetica Bold, sans-serif;
 }
@@ -31,33 +32,8 @@ h1 {
   display: none;
 }
 
-.arrows {
-  //arrows for reuse
-  display: flex;
-  .left-arrow-button {
-    height: 6px;
-    &:hover {
-      opacity: 50%;
-      cursor: pointer;
-    }
-  }
-  .right-arrow-button {
-    margin-left: 40px;
-    height: 6px;
-    &:hover {
-      opacity: 50%;
-      cursor: pointer;
-    }
-  }
-
-  @media only screen and (max-width: 230px) {
-    display: none;
-  }
-}
-
 .upload-time {
   //upload timer for reuse
-
   display: flex;
   color: #a6adb4;
   h5 {
@@ -69,6 +45,31 @@ h1 {
     a {
       font-family: Helvetica Oblique, sans-serif;
     }
+  }
+}
+
+.arrows {
+  //arrows for reuse
+  display: flex;
+  .left-arrow-button {
+    height: 10px;
+    width: 6px;
+    &:hover {
+      opacity: 50%;
+      cursor: pointer;
+    }
+  }
+  .right-arrow-button {
+    margin-left: 40px;
+    height: 10px;
+    width: 6px;
+    &:hover {
+      opacity: 50%;
+      cursor: pointer;
+    }
+  }
+  @media only screen and (max-width: 230px) {
+    display: none;
   }
 }
 
@@ -179,7 +180,8 @@ header {
       margin-top: 177px;
       color: white;
       line-height: 26px;
-      width: 600px;
+      padding-left: 140px;
+      padding-right: 140px;
 
       @media only screen and (max-width: 1280px) {
         padding-left: 80px;
@@ -187,22 +189,21 @@ header {
       }
 
       @media only screen and (max-width: 1124px) {
-        width: 600px;
         margin-top: 83px;
         margin-bottom: 82px;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 80px;
+        padding-right: 80px;
       }
 
       @media only screen and (max-width: 668px) {
         width: 100%;
-        padding: 40px 24px;
+        padding: 40px 80px;
       }
 
       @media only screen and (max-width: 604px) {
         position: relative;
         z-index: 2;
-        padding: 40px 24px;
+        padding: 40px 80px;
         h1 {
           line-height: 34px;
           margin-bottom: 16px;
@@ -218,6 +219,10 @@ header {
         border: none;
         margin-top: 30px;
         margin-bottom: 40px;
+      }
+
+      @media only screen and (max-width: 480px) {
+        padding: 40px 24px;
       }
 
       @media only screen and (max-width: 580px) {
@@ -263,7 +268,7 @@ header {
     }
   }
   .more-news {
-    padding: 90px;
+    padding: 100px 120px 0 100px;
     height: 600px;
     width: 600px;
     display: flex;

@@ -87,32 +87,6 @@ h1 {
   display: none;
 }
 
-.arrows {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.arrows .left-arrow-button {
-  height: 6px;
-}
-.arrows .left-arrow-button:hover {
-  opacity: 50%;
-  cursor: pointer;
-}
-.arrows .right-arrow-button {
-  margin-left: 40px;
-  height: 6px;
-}
-.arrows .right-arrow-button:hover {
-  opacity: 50%;
-  cursor: pointer;
-}
-@media only screen and (max-width: 230px) {
-  .arrows {
-    display: none;
-  }
-}
-
 .upload-time {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,6 +102,34 @@ h1 {
 }
 .upload-time h5 a {
   font-family: Helvetica Oblique, sans-serif;
+}
+
+.arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.arrows .left-arrow-button {
+  height: 10px;
+  width: 6px;
+}
+.arrows .left-arrow-button:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+.arrows .right-arrow-button {
+  margin-left: 40px;
+  height: 10px;
+  width: 6px;
+}
+.arrows .right-arrow-button:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+@media only screen and (max-width: 230px) {
+  .arrows {
+    display: none;
+  }
 }
 
 header {
@@ -270,7 +272,8 @@ header .mobile-profile-picture .profile-photo-circle {
   margin-top: 177px;
   color: white;
   line-height: 26px;
-  width: 600px;
+  padding-left: 140px;
+  padding-right: 140px;
 }
 @media only screen and (max-width: 1280px) {
   .news-section .world-news .world-news-content {
@@ -280,24 +283,23 @@ header .mobile-profile-picture .profile-photo-circle {
 }
 @media only screen and (max-width: 1124px) {
   .news-section .world-news .world-news-content {
-    width: 600px;
     margin-top: 83px;
     margin-bottom: 82px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 @media only screen and (max-width: 668px) {
   .news-section .world-news .world-news-content {
     width: 100%;
-    padding: 40px 24px;
+    padding: 40px 80px;
   }
 }
 @media only screen and (max-width: 604px) {
   .news-section .world-news .world-news-content {
     position: relative;
     z-index: 2;
-    padding: 40px 24px;
+    padding: 40px 80px;
   }
   .news-section .world-news .world-news-content h1 {
     line-height: 34px;
@@ -314,6 +316,11 @@ header .mobile-profile-picture .profile-photo-circle {
   border: none;
   margin-top: 30px;
   margin-bottom: 40px;
+}
+@media only screen and (max-width: 480px) {
+  .news-section .world-news .world-news-content {
+    padding: 40px 24px;
+  }
 }
 @media only screen and (max-width: 580px) {
   .news-section .world-news .world-news-content {
@@ -360,7 +367,7 @@ header .mobile-profile-picture .profile-photo-circle {
   }
 }
 .news-section .more-news {
-  padding: 90px;
+  padding: 100px 120px 0 100px;
   height: 600px;
   width: 600px;
   display: -webkit-box;

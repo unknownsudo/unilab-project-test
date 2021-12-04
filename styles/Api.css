@@ -1,0 +1,127 @@
+@font-face {
+  font-family: Acumin Pro;
+  src: url(../fonts/AcuminPro/AcuminPro-Regular.woff2) format("woff2"), url(../fonts/AcuminPro/AcuminPro-Regular.woff2) format("woff"), url(../fonts/AcuminPro/AcuminPro-Regular.woff2) format("ttf"), url(../fonts/AcuminPro/AcuminPro-Regular.woff2) format("eot");
+  font-style: normal;
+}
+@font-face {
+  font-family: AcuminPro Bold;
+  src: url(../fonts/AcuminPro/AcuminPro-Bold.woff2) format("woff2"), url(../fonts/AcuminPro/AcuminPro-Bold.woff) format("woff"), url(../fonts/AcuminPro/AcuminPro-Bold.ttf) format("ttf"), url(../fonts/AcuminPro/AcuminPro-Bold.eot) format("eot");
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvetica;
+  src: url(../fonts/Helvetica/Helvetica.woff2) format("woff2"), url(../fonts/Helvetica/Helvetica.woff) format("woff"), url(../fonts/Helvetica/Helvetica.ttf) format("ttf"), url(../fonts/Helvetica/Helvetica.eot) format("eot");
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvetica Bold;
+  src: url(../fonts/Helvetica/Helvetica-Bold.woff2) format("woff2"), url(../fonts/Helvetica/Helvetica-Bold.woff) format("woff"), url(../fonts/Helvetica/Helvetica-Bold.ttf) format("ttf"), url(../fonts/Helvetica/Helvetica-Bold.eot) format("eot");
+  font-style: normal;
+}
+@font-face {
+  font-family: Helvetica Oblique;
+  src: url(../fonts/Helvetica/Helvetica-Oblique.woff2) format("woff2"), url(../fonts/Helvetica/Helvetica-Oblique.woff) format("woff"), url(../fonts/Helvetica/Helvetica-Oblique.ttf) format("ttf"), url(../fonts/Helvetica/Helvetica-Oblique.eot) format("eot");
+  font-style: normal;
+}
+body {
+  background-color: #f6f8f9;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.active {
+  opacity: 100% !important;
+}
+
+.upload-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #a6adb4;
+}
+.upload-time h5 {
+  font-style: italic;
+  font-weight: 100;
+  margin-left: 10px;
+  font-size: 0.8125rem;
+  font-family: Helvetica Oblique, sans-serif;
+}
+.upload-time h5 a {
+  font-family: Helvetica Oblique, sans-serif;
+}
+
+.search-cont {
+  text-align: center;
+}
+.search-cont .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.search-cont .search input {
+  width: 50vw;
+  height: 5vh;
+}
+.search-cont .title-home {
+  font-size: 2rem;
+  color: pink;
+  margin-top: 20px;
+}
+.search-cont .title-home a {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: red;
+}
+.search-cont .title-home a:hover {
+  cursor: pointer;
+}
+.search-cont .title-home a img {
+  margin-right: 10px;
+}
+@media only screen and (max-width: 520px) {
+  .search-cont .title-home {
+    margin-top: 35px;
+  }
+}
+.search-cont .music-list {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.search-cont .music-list ul {
+  margin-bottom: 30px;
+}
+.search-cont .music-list ul .artist-name::before {
+  content: "Artist Name: ";
+  font-weight: 700;
+}
+.search-cont .music-list ul .music-name::before {
+  content: "Music Name: ";
+  font-weight: 700;
+}
+.search-cont .music-list ul .album-name::before {
+  content: "Album Name: ";
+  font-weight: 700;
+}
+.search-cont .music-list ul a {
+  font-family: Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 1rem;
+  color: pink;
+  font-weight: bold;
+}
+.search-cont .music-list ul li {
+  font-family: AcuminPro Bold, sans-serif;
+  margin-bottom: 10px;
+}

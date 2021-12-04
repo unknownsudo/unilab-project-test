@@ -289,6 +289,7 @@ header {
     }
   }
 }
+
 .description-title-section {
   width: 1160px;
   margin: 0 auto;
@@ -398,6 +399,7 @@ header {
     }
   }
 }
+
 .cover-description-section {
   width: 1160px;
   margin: 0 auto;
@@ -474,7 +476,7 @@ header {
       display: block;
     }
     @media only screen and (max-width: 375px) {
-      margin-bottom:30px;
+      margin-bottom: 30px;
     }
     @media only screen and (max-width: 270px) {
       display: flex;
